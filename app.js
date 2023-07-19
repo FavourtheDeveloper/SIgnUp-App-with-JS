@@ -17,12 +17,11 @@ function onSubmit(e) {
         let newLi = document.createElement("li");
         newLi.innerHTML = userInput.value + " and E-Mail is " + userMail.value ;
         userList.appendChild(newLi);
-
-        userInput.value === "";
-        userMail.value === "";
-
+        submitbutton.value = "REGISTERED";
+        setTimeout(() => submitbutton.value = "Register", 3000);
         
-
+        userInput.value = "";
+        userMail.value = "";
     }
 
 }
